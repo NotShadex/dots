@@ -1,15 +1,9 @@
-***
-
 # 🌿 Rosé Pine KDE Plasma Dots
 
 Personal KDE Plasma configuration files featuring a full Rosé Pine theme setup
 
----
-
 ## 🎨 Why this exists?
 > "I forget how to make KDE look clean."
-
----
 
 ## 📂 Repository Structure
 The folder structure mimics the Linux filesystem for easy setup:
@@ -17,8 +11,6 @@ The folder structure mimics the Linux filesystem for easy setup:
 *   **`.local/share/`**: Contains global color schemes, icon packs, and fonts.
 *   **`.icons/`**: Contains the cursor packs.
 *   **`.config/`**: (If applicable) configuration files for Starship, Kitty, and more.
-
----
 
 ## 🚀 Installation & Setup
 
@@ -49,8 +41,6 @@ eval "$(starship init bash)"
     *   Go to **Settings** > **Colors & Themes** > **Cursors**.
     *   Click **Configure Launch Feedback** and set it to **No Feedback** or **Static**.
 
----
-
 ## 🧩 Extensions
 Found at Top Panel > Show Panel configuration:
 
@@ -61,8 +51,6 @@ Found at Top Panel > Show Panel configuration:
 *   🖥️ **Desktop Indicator** – Minimalist workspace switcher.
 *   🎨 **Panel Colorizer** – Deep customization for panel transparency and color.
 *   ⚙️ **KDE Control Station** – A mobile-style toggles menu for Wi-Fi, BT, and Brightness.
-
----
 
 ## 🔗 Resources & Credits
 The latest versions of the themes used in this setup:
@@ -76,8 +64,6 @@ The latest versions of the themes used in this setup:
 | **Firefox** | [GitHub - Rosé Pine Firefox](https://github.com/rose-pine/firefox) |
 | **Fonts** | [Roboto](https://fonts.google.com/specimen/Roboto) & [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) |
 | **Main Theme** | [Rosé Pine Official](https://rosepinetheme.com/themes/) |
-
----
 
 ## 🛠️ Work in Progress
 
