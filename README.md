@@ -1,39 +1,85 @@
-# dots
+***
+
+# 🌿 Rosé Pine KDE Plasma Dots
+
 Personal KDE Plasma configuration files featuring a full Rosé Pine theme setup
 
-# Why does this exist
-I mostly forget how to make KDE look clean again!
+---
 
-The folder structure actually represents where this elements have to go.
-.local/share contains global color-scheme for apps, fonts (just extract them) and icon pack
-.icons contains the cursor pack
-also for starship to work you need to put .bashrc eval "$(starship init bash)"
+## 🎨 Why this exists?
+> "I forget how to make KDE look clean."
 
-in KDE settings I made a user defined rule that makes all windows opacity 90%
-How to set it up: Location Settings > Window Managment > Window Rules > Add new
-Set Window class: Unimportant and Window Types: All Selected > Add property > Active & Inactive opacity
+---
 
-window decorations and application style stay at breeze
-change the annoying ass bouncing animation when loading applications at 
-Settings > Colors & Themes > Cursor > Configure Launch Feedback
+## 📂 Repository Structure
+The folder structure mimics the Linux filesystem for easy setup:
 
-EXTENSIONS:
-- Wallpaper effects (might have to find git repo)
-- Andromeda launcher (might be preinstalled tweak some options)
-- Plasmusic toolbar
-- Window title
-- Desktop indicator
-- Panel colorizer
-- KDE control station
+*   **`.local/share/`**: Contains global color schemes, icon packs, and fonts.
+*   **`.icons/`**: Contains the cursor packs.
+*   **`.config/`**: (If applicable) configuration files for Starship, Kitty, and more.
 
-LINKS TO ALL THE SITES FOR NEWEST VERSION:
-- Starship: https://github.com/rose-pine/starship
-- KDE color scheme and Plasma Style: https://github.com/ashbork/kde
-- Kitty: https://github.com/rose-pine/kitty
-- Yet Another Monochrome Icon Set: https://store.kde.org/p/2303161
-- Firefox: https://github.com/rose-pine/firefox
-- Roboto: https://fonts.google.com/specimen/Roboto
-- Roboto Mono: https://fonts.google.com/specimen/Roboto+Mono
-- Rose Pine Theme: https://rosepinetheme.com/themes/
+---
 
-NVIM CONF IN PROGRESS
+## 🚀 Installation & Setup
+
+### 1. File Placement
+Move the folders to their respective locations in your home directory:
+- Extract fonts and icons into `~/.local/share/`
+- Extract cursors into `~/.icons/`
+
+### 2. Terminal Setup (Starship)
+To get the Starship prompt working add the following line to the end of your `~/.bashrc`:
+
+```bash
+eval "$(starship init bash)"
+```
+
+### 3. Window Rules 
+1. Go to **System Settings** > **Window Management** > **Window Rules**.
+2. Click **Add New...**
+3. Set **Window class** to: `Unimportant`.
+4. Set **Window types** to: `All Selected`.
+5. Click **Add Property** > Search **Active opacity** and **Inactive opacity**.
+6. Set both to **90%** and select **Force**.
+
+### 4. Polishing the UI
+*   **Application Style:** Keep at **Breeze**.
+*   **Window Decorations:** Keep at **Breeze**.
+*   **Launch Feedback:** To disable the annoying bouncing icon:
+    *   Go to **Settings** > **Colors & Themes** > **Cursors**.
+    *   Click **Configure Launch Feedback** and set it to **No Feedback** or **Static**.
+
+---
+
+## 🧩 Extensions
+Found at Top Panel > Show Panel configuration:
+
+*   🖼️ **Wallpaper Effects** – Enhanced background transitions.
+*   🚀 **Andromeda Launcher** – A clean, modern application launcher.
+*   🎵 **Plasmusic Toolbar** – Media controls directly in your panel.
+*   🏷️ **Window Title** – Displays the active window name in the panel.
+*   🖥️ **Desktop Indicator** – Minimalist workspace switcher.
+*   🎨 **Panel Colorizer** – Deep customization for panel transparency and color.
+*   ⚙️ **KDE Control Station** – A mobile-style toggles menu for Wi-Fi, BT, and Brightness.
+
+---
+
+## 🔗 Resources & Credits
+The latest versions of the themes used in this setup:
+
+| Component | Source Link |
+| :--- | :--- |
+| **Starship Theme** | [GitHub - Rosé Pine Starship](https://github.com/rose-pine/starship) |
+| **KDE Color Scheme** | [GitHub - Ashbork KDE](https://github.com/ashbork/kde) |
+| **Terminal (Kitty)** | [GitHub - Rosé Pine Kitty](https://github.com/rose-pine/kitty) |
+| **Icons** | [Yet Another Monochrome Icon Set](https://store.kde.org/p/2303161) |
+| **Firefox** | [GitHub - Rosé Pine Firefox](https://github.com/rose-pine/firefox) |
+| **Fonts** | [Roboto](https://fonts.google.com/specimen/Roboto) & [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) |
+| **Main Theme** | [Rosé Pine Official](https://rosepinetheme.com/themes/) |
+
+---
+
+## 🛠️ Work in Progress
+
+- [ ] Finish **Neovim** (NVIM) configuration.
+
